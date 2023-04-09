@@ -1,0 +1,198 @@
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Bree+Serif&family=Dancing+Script:wght@700&family=Lilita+One&family=Lily+Script+One&family=Lobster+Two&family=Paytone+One&family=Poppins&family=Roboto:wght@900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: "COCOGOOSE", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: "Ubuntu";
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+/* scroll to top */
+.scroll-button {
+  z-index: 500;
+  position: fixed;
+  overflow: hidden;
+  bottom: 30px;
+  right: 30px;
+  font-size: 30px;
+  padding: 3px 15px;
+  color: #4B4453;
+  border-radius: 50%;
+}
+
+.scroll-button:hover {
+  color: orange;
+  background-color: #4B4453;
+  transition: all 0.075s ease;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+/* text hover */
+ul a {
+  font-weight: 100 !important;
+}
+
+li a::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #f5f5f5;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+li a:hover::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #f5f5f5;
+  display: block;
+}
+
+.about-style,
+.contact-item {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================== */
+.conner {
+  max-width: 1920px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.conner .display-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  /* background-color: #046491; */
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  font-family: "Aclonica", sans-serif;
+}
+.nav-item2 {
+  font-family: "Aclonica", sans-serif;
+}
+
+/* APPLYING MARGIN ON NAVBAR LINKS */
+.margin-x {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+/* NAVBAR-MENU-ICON (HAMBURGER) */
+.logo {
+  font-family: "Aclonica", sans-serif;
+}
+
+.hamburger {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.nav-links {
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    z-index: 15;
+    position: relative;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    width: 26px;
+    border-radius: 18px;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(-7px) rotate(42deg) translateX(15px);
+    width: 18px;
+    border-radius: 18px;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(7px) rotate(-42deg) translateX(15px);
+    width: 18px;
+    border-radius: 18px;
+  }
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    gap: 10px;
+    /* padding: 100px 10px; */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #046491;
+    width: 100%;
+    min-height: 100vh;
+    transition: 0.6s ease-in-out;
+    z-index: 10;
+    font-size: 20px;
+  }
+  .nav-item {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .active {
+    right: 0% !important;
+  }
+}
+
+
+/* ================================= */
+.conts {
+  padding-top: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+
+}
+
+video {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+h3 {
+  text-align: center;
+}
